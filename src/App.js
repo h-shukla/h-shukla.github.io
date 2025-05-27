@@ -1,16 +1,19 @@
-import { Route, Routes } from "react-router";
-import "./App.css";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+// import AboutPage from "./pages/AboutPage";
 
 function App() {
     return (
-        <div>
-            <Navbar />
+        <Router>
             <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    {/* <Route path="about" element={<AboutPage />} /> */}
+                    {/* Add more routes here */}
+                </Route>
             </Routes>
-        </div>
+        </Router>
     );
 }
 
