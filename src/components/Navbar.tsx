@@ -6,7 +6,10 @@ const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="flex items-center justify-between px-4 py-4 bg-transparent relative">
+        <nav
+            className="flex items-center justify-between px-4 py-4 bg-transparent relative"
+            style={{ fontFamily: "Raleway, sans-serif" }}
+        >
             {/* Left side - Logo */}
             <div className="flex items-center space-x-8">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-red-900 rounded-full flex items-center justify-center">
@@ -40,12 +43,12 @@ const Navbar: React.FC = () => {
             {/* Navigation Links */}
             <div
                 className={`
-                    flex-col md:flex-row md:flex items-center space-y-6 md:space-y-0 md:space-x-12 text-white
+                    flex-col md:flex-row md:flex items-center space-y-6 md:space-y-0 md:space-x-8 text-white
                     absolute md:static top-full left-0 w-full md:w-auto  md:bg-transparent z-20
                     transition-all duration-300
                     ${
                         menuOpen
-                            ? "flex bg-gradient-to-br from-gray-800 to-gray-900 pb-4"
+                            ? "flex bg-gradient-to-br from-[#1c1c1c] to-[#1c1c1c] pb-4"
                             : "hidden md:flex"
                     }
                 `}

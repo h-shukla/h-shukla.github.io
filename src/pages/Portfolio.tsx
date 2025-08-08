@@ -16,35 +16,36 @@ const Portfolio: React.FC = () => {
     const projects: ProjectCard[] = [
         {
             id: 1,
-            title: "KaoTu Mobile 5.0",
-            description: "A comprehensive mobile platform",
-            category: "UI-App",
-            year: "2021",
+            title: "Coming Soon",
+            description:
+                "A Design to Code solo project of Ecom platform made with MERN stack",
+            category: "Full Stack App",
+            year: "2025",
             image: "/api/placeholder/300/200",
             bgColor: "from-purple-600 to-purple-800",
         },
         {
             id: 2,
-            title: "KaoTu Activity Poster",
-            description: "Part of the operational activity poster series",
-            category: "Graphic Design",
-            year: "2021",
+            title: "Coming Soon",
+            description: "A flutter frontend for the Ecom platform",
+            category: "UI/UX & Mobile App Development",
+            year: "??",
             image: "/api/placeholder/300/200",
             bgColor: "from-blue-600 to-blue-800",
         },
         {
             id: 3,
-            title: "October Personal Portfolio",
-            description: "Personal portfolio collection",
-            category: "UI-App",
-            year: "2020",
+            title: "Coming Soon",
+            description: "Coming Soon",
+            category: "Graphic Design",
+            year: "??",
             image: "/api/placeholder/300/200",
-            bgColor: "from-green-600 to-green-800",
+            bgColor: "from-blue-600 to-blue-800",
         },
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="max-w-6xl mx-auto px-6 py-12 ">
             {/* Tab Navigation */}
             {/* <div className="flex justify-center mb-12">
                 <div className="bg-blue-900/30 backdrop-blur-sm rounded-lg p-1 border border-blue-700/30">
