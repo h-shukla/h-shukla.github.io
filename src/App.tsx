@@ -1,10 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+
 const App = () => {
     return (
-        <div className="bg-gray-800 min-h-screen">
-            <h1 className="text-2xl underline text-slate-500">
-                Hello, World!!
-            </h1>
-        </div>
+        <Router>
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                </Routes>
+            </div>
+        </Router>
     );
 };
 
