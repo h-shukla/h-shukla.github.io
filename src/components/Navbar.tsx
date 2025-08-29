@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CodeXml } from "lucide-react";
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navbar: React.FC = () => {
             {/* Left side - Logo */}
             <div className="flex items-center space-x-8">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-red-900 rounded-full flex items-center justify-center">
-                    <CodeXml className="w-12 h-12 p-2 text-white" />
+                    <img src="/logo.png" alt="logo for the page" />
                 </div>
             </div>
 
