@@ -17,14 +17,14 @@ const Portfolio: React.FC = () => {
     const projects: ProjectCard[] = [
         {
             id: 1,
-            title: "Coming Soon",
+            title: "sneakyc",
             description:
                 "A Design to Code solo project of Ecom platform made with MERN stack",
             category: "Full Stack App",
             year: "2025",
-            image: "/api/placeholder/300/200",
+            image: "/sneakyc.jpg",
             bgColor: "from-purple-600 to-purple-800",
-            link: "", // No link yet
+            link: "https://github.com/h-shukla/sneakyC",
         },
         {
             id: 2,
